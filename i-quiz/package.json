@@ -1,0 +1,25 @@
+{
+  "name": "i-quiz",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "iq quiz app with three levels of iq",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack ",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seif1125/i-quiz.git"
+  },
+  "author": "seif Ammar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seif1125/i-quiz/issues"
+  },
+  "homepage": "https://github.com/seif1125/i-quiz#readme",
+  "devDependencies": {
+    "webpack": "^5.27.1",
+    "webpack-cli": "^4.5.0"
+  }
+}
