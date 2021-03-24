@@ -4,6 +4,6 @@ export default function getHomeDom() {
         <h1> I-Quiz </h1>
         <span>WHAT IS I-QUIZ</span>
         <p>I-Quiz is a multi-leveled IQ assesment which helps you to improve your IQ capabilities</p>
-        <button>Get Started</button>
+        <button class="start-btn">Get Started</button>
     </div>`;
 }

@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Nunito&family=Open+Sans+Condensed:wght@300&display=swap");
+body {
+  background-color: white;
+}
+
+h1 {
+  width: 60%;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Dosis", sans-serif;
+  color: #000;
+}
+
+span {
+  width: 60%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #000;
+}
+
+button {
+  background-color: #0868e6;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 1% 2%;
+  color: white;
+}
+
+.home-cont,
+.level-cont,
+.quiz-cont,
+.result-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.home-cont p {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  background-color: #888484;
+  color: #000;
+  border-radius: 1rem;
+  padding: 2% 1%;
+}
+
+.level-cont .level-cont-cards {
+  width: 60%;
+  margin: 2% 0%;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.level-cont .level-cont-cards div {
+  width: 25%;
+}
+
+.level-cont button {
+  width: 60%;
+}
+
+.quiz-cont .quiz-cont-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quiz-cont .quiz-cont-details h1 {
+  margin: 1% 0%;
+}
+
+.quiz-cont .quiz-cont-details .quiz-cont .quiz-cont-details-level span:nth-child(2) {
+  margin-bottom: 1%;
+}
+
+.quiz-cont .questioncard {
+  width: 80%;
+}
+
+.quiz-cont .questioncard .question-cont {
+  padding: 2% 1%;
+  background-color: #4e4e4e;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.quiz-cont .questioncard .choices-div {
+  padding: 2% 1%;
+  background-color: #888484;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.quiz-cont .actions-div {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quiz-cont .actions-div button {
+  width: 10%;
+}
+
+.results-div {
+  margin: 1% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.result-cont .score-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.result-cont .graphic-cont span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */

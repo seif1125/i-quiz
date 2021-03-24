@@ -1,0 +1,118 @@
+@import "config";
+
+body {
+  @include background(white);
+}
+h1 {
+  width: 60%;
+  @include fontsize("large");
+  @include fontweight("bold");
+  font-family: "Dosis", sans-serif;
+  color: getprimarycolor();
+}
+span {
+  width: 60%;
+  @include fontsize("medium");
+  @include fontweight("normal");
+  font-family: "Open Sans Condensed", sans-serif;
+  color: getprimarycolor();
+}
+button {
+  background-color: $buttoncolor;
+  @include fontsize("small");
+  @include fontweight("normal");
+  cursor: pointer;
+  padding: 1% 2%;
+  color: white;
+}
+.home-cont,
+.level-cont,
+.quiz-cont,
+.result-cont {
+  @include flex(column, center, center);
+  text-align: center;
+}
+
+.home-cont {
+  p {
+    @include fontsize("small");
+    @include fontweight("bold");
+    font-family: "Nunito", sans-serif;
+    background-color: getsecondarycolor();
+    color: getprimarycolor();
+    border-radius: 1rem;
+    padding: 2% 1%;
+  }
+}
+.level-cont {
+  .level-cont-cards {
+    width: 60%;
+    margin: 2% 0%;
+    color: getprimarycolor();
+    @include fontsize("small");
+    @include fontweight("bold");
+    @include flex(row, space-around, center);
+
+    div {
+      width: 25%;
+    }
+  }
+  button {
+    width: 60%;
+  }
+}
+
+.quiz-cont {
+  #{&}-details {
+    @include flex(column, center, center);
+    h1 {
+      margin: 1% 0%;
+    }
+    #{&}-level {
+      span:nth-child(2) {
+        margin-bottom: 1%;
+      }
+    }
+  }
+
+  .questioncard {
+    width: 80%;
+    .question-cont {
+      padding: 2% 1%;
+      background-color: getaccentcolor();
+      color: getprimarycolor();
+      @include fontsize("medium");
+      @include fontweight("bold");
+    }
+    .choices-div {
+      padding: 2% 1%;
+      background-color: getsecondarycolor();
+      color: getprimarycolor();
+      @include fontsize("small");
+      @include fontweight("normal");
+    }
+  }
+  .actions-div {
+    width: 80%;
+    @include flex(row, space-around, center);
+    button {
+      width: 10%;
+    }
+  }
+}
+.results-div {
+  margin: 1% 0%;
+  @include flex(row, center, center);
+}
+
+.result-cont {
+  .score-cont {
+    @include flex(column, center, center);
+  }
+  .graphic-cont {
+    span {
+      @include fontsize("large");
+      @include fontweight("bold");
+    }
+  }
+}

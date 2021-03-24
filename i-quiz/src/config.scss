@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Nunito&family=Open+Sans+Condensed:wght@300&display=swap');
+
+$buttoncolor:rgb(8, 104, 230);
+$background-color:transparent;
+$white-color:white;
+
+$fontsize-map:("large":3rem,"medium":1.5rem, "small":1rem);
+$fontweight-map:("bold":bold,"normal":500, "light":300);
+$dark-map:("primary":#fff, "secondary":rgb(37, 37, 37), "accent":rgb(17, 17, 17));
+$white-map:("primary":#000, "secondary":rgb(136, 132, 132), "accent":rgb(78, 78, 78));
+
+
+
+@mixin background($dark) {
+    @if ($dark==black){
+        $background-color:black;
+        background-color: $background-color;
+    }
+    @else{
+           $background-color:white;
+        background-color: $background-color;
+    }
+    
+}
+
+@mixin flex($position,$justify,$align) {
+    display: flex;
+    flex-direction: $position;
+    justify-content: $justify;
+    align-items: $align;
+    
+}
+
+
+@mixin fontsize($fontsize) {
+    font-size: map-get($fontsize-map, $fontsize );
+}
+@mixin fontweight($fontweight) {
+    font-weight: map-get($fontweight-map, $fontweight );
+}
+
+
+@function getprimarycolor(){
+    @if(lightness($background-color)<40){
+        @return map-get($white-map, primary );
+    }
+    @else{
+        @return map-get($dark-map , primary );
+    }
+}
+
+@function getsecondarycolor(){
+    @if(lightness($background-color)<40){
+        @return map-get($white-map , secondary );
+    }
+    @else{
+ @return map-get($dark-map , secondary );
+    }
+}
+
+@function getaccentcolor(){
+    @if(lightness($background-color)<40){
+        @return map-get($white-map , accent );
+    }
+    @else{
+ @return map-get($dark-map , accent);
+    }
+}
+
